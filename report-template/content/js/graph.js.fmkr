@@ -51,14 +51,14 @@ var responseTimePercentilesInfos = {
                 },
                 xaxis: {
                     tickDecimals: 1,
-                    axisLabel: "Percentiles",
+                    axisLabel: "百分位数",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
                     axisLabelPadding: 20,
                 },
                 yaxis: {
-                    axisLabel: "Percentile value in ms",
+                    axisLabel: "百分位数值 (ms)",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -127,14 +127,14 @@ var responseTimeDistributionInfos = {
                     container: '#legendResponseTimeDistribution'
                 },
                 xaxis:{
-                    axisLabel: "Response times in ms",
+                    axisLabel: "响应时间 (ms)",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
                     axisLabelPadding: 20,
                 },
                 yaxis: {
-                    axisLabel: "Number of responses",
+                    axisLabel: "响应数",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -196,7 +196,7 @@ var syntheticResponseTimeDistributionInfos = {
                     container: '#legendSyntheticResponseTimeDistribution'
                 },
                 xaxis:{
-                    axisLabel: "Response times ranges",
+                    axisLabel: "响应时间范围",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -206,7 +206,7 @@ var syntheticResponseTimeDistributionInfos = {
                     max:3.5
                 },
                 yaxis: {
-                    axisLabel: "Number of responses",
+                    axisLabel: "响应数",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -280,7 +280,7 @@ var activeThreadsOverTimeInfos = {
                     axisLabelPadding: 20,
                 },
                 yaxis: {
-                    axisLabel: "Number of active threads",
+                    axisLabel: "活跃线程数",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -348,14 +348,14 @@ var timeVsThreadsInfos = {
                     }
                 },
                 xaxis: {
-                    axisLabel: "Number of active threads",
+                    axisLabel: "活跃线程数",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
                     axisLabelPadding: 20,
                 },
                 yaxis: {
-                    axisLabel: "Average response times in ms",
+                    axisLabel: "平均响应时间 (ms)",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -428,7 +428,7 @@ var bytesThroughputOverTimeInfos = {
                     axisLabelPadding: 20,
                 },
                 yaxis: {
-                    axisLabel: "Bytes / sec",
+                    axisLabel: "字节 / 秒",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -505,7 +505,7 @@ var responseTimesOverTimeInfos = {
                     axisLabelPadding: 20,
                 },
                 yaxis: {
-                    axisLabel: "Average response time in ms",
+                    axisLabel: "平均响应时间 (ms)",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -586,7 +586,7 @@ var latenciesOverTimeInfos = {
                     axisLabelPadding: 20,
                 },
                 yaxis: {
-                    axisLabel: "Average response latencies in ms",
+                    axisLabel: "平均响应延迟 (ms)",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -667,7 +667,7 @@ var connectTimeOverTimeInfos = {
                     axisLabelPadding: 20,
                 },
                 yaxis: {
-                    axisLabel: "Average Connect Time in ms",
+                    axisLabel: "平均连接时长 (ms)",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -749,7 +749,7 @@ var responseTimePercentilesOverTimeInfos = {
                     axisLabelPadding: 20,
                 },
                 yaxis: {
-                    axisLabel: "Response Time in ms",
+                    axisLabel: "响应时间 (ms)",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -818,14 +818,14 @@ var responseTimeVsRequestInfos = {
                 }
             },
             xaxis: {
-                axisLabel: "Global number of requests per second",
+                axisLabel: "全局每秒请求数",
                 axisLabelUseCanvas: true,
                 axisLabelFontSizePixels: 12,
                 axisLabelFontFamily: 'Verdana, Arial',
                 axisLabelPadding: 20,
             },
             yaxis: {
-                axisLabel: "Median Response Time in ms",
+                axisLabel: "响应时间中位数 (ms)",
                 axisLabelUseCanvas: true,
                 axisLabelFontSizePixels: 12,
                 axisLabelFontFamily: 'Verdana, Arial',
@@ -892,14 +892,14 @@ var latenciesVsRequestInfos = {
                 }
             },
             xaxis: {
-                axisLabel: "Global number of requests per second",
+                axisLabel: "全局每秒请求数",
                 axisLabelUseCanvas: true,
                 axisLabelFontSizePixels: 12,
                 axisLabelFontFamily: 'Verdana, Arial',
                 axisLabelPadding: 20,
             },
             yaxis: {
-                axisLabel: "Median Latency in ms",
+                axisLabel: "延迟中位数 (ms)",
                 axisLabelUseCanvas: true,
                 axisLabelFontSizePixels: 12,
                 axisLabelFontFamily: 'Verdana, Arial',
@@ -969,7 +969,7 @@ var hitsPerSecondInfos = {
                     axisLabelPadding: 20,
                 },
                 yaxis: {
-                    axisLabel: "Number of hits / sec",
+                    axisLabel: "点击数 / 秒",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -1046,7 +1046,7 @@ var codesPerSecondInfos = {
                     axisLabelPadding: 20,
                 },
                 yaxis: {
-                    axisLabel: "Number of responses / sec",
+                    axisLabel: "响应数 / 秒",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -1123,7 +1123,7 @@ var transactionsPerSecondInfos = {
                     axisLabelPadding: 20,
                 },
                 yaxis: {
-                    axisLabel: "Number of transactions / sec",
+                    axisLabel: "事务数 / 秒",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',
@@ -1204,7 +1204,7 @@ var totalTPSInfos = {
                     axisLabelPadding: 20,
                 },
                 yaxis: {
-                    axisLabel: "Number of transactions / sec",
+                    axisLabel: "事务数 / 秒",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Verdana, Arial',

@@ -125,7 +125,7 @@ function formatDuration(duration, spaced) {
  * Gets axis label for the specified granularity
  */
 function getElapsedTimeLabel(granularity) {
-    return "Elapsed Time (granularity: " + formatDuration(granularity) + ")";
+    return "消逝时间 (颗粒度: " + formatDuration(granularity) + ")";
 }
 
 /*
@@ -147,7 +147,7 @@ function getTimeFormat(granularity) {
  * Gets axis label for the specified granularity
  */
 function getConnectTimeLabel(granularity) {
-    return "Connect Time (granularity: " + formatDuration(granularity) + ")";
+    return "连接时间 (颗粒度: " + formatDuration(granularity) + ")";
 }
 
 //Get the property value of an object using the specified key
