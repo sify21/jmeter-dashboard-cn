@@ -49,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../index.html">${reportTitle!"Apache JMeter Dashboard"}</a>
+                <a class="navbar-brand" href="../../index.html">${reportTitle!"Apache JMeter 仪表板"}</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -59,61 +59,61 @@
                     <ul class="nav" id="side-menu">
 
                         <li>
-                            <a href="../../index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="../../index.html"><i class="fa fa-dashboard fa-fw"></i> 仪表板</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 图表<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="OverTime.html">Over Time<span class="fa arrow"></span></a>
+                                    <a href="OverTime.html">时间<span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level in" id="submenu">
                                         <li>
                                             <a href="OverTime.html#responseTimesOverTime" onclick="$('#bodyResponseTimeOverTime').collapse('show');">
-                                                Response Times Over Time
+                                                响应时长 - 时间
                                             </a>
                                         </li>
                                         <li>
                                             <a href="OverTime.html#responseTimePercentilesOverTime" onclick="$('#bodyResponseTimePercentilesOverTime').collapse('show');">
-                                                Response Time Percentiles Over Time (successful responses)
+                                                响应时长百分位数 - 时间 (成功请求)
                                             </a>
                                         </li>
                                         <li>
                                             <a href="OverTime.html#activeThreadsOverTime" onclick="$('#bodyActiveThreadsOverTime').collapse('show');">
-                                                Active Threads Over Time
+                                                活跃线程 - 时间
                                             </a>
                                         </li>
                                         <li>
                                             <a href="OverTime.html#bytesThroughputOverTime" onclick="$('#bodyBytesThroughputOverTime').collapse('show');">
-                                                Bytes Throughput Over Time
+                                                字节吞吐量 - 时间
                                             </a>
                                         </li>
                                         <li>
                                             <a href="OverTime.html#latenciesOverTime" onclick="$('#bodyLatenciesOverTime').collapse('show');">
-                                                Latencies Over Time
+                                                延迟 - 时间
                                             </a>
                                         </li>
                                         <li>
                                             <a href="OverTime.html#connectTimeOverTime" onclick="$('#bodyConnectTimeOverTime').collapse('show');">
-                                                Connect Time Over Time
+                                                连接时长 - 时间
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="Throughput.html">Throughput</a>
+                                    <a href="Throughput.html">吞吐量</a>
                                 </li>
                                 <li>
-                                    <a href="ResponseTimes.html">Response Times</a>
+                                    <a href="ResponseTimes.html">响应时间</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
 
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Customs Graphs<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>定制图表<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="CustomsGraphs.html">Over Time</a>
+                                    <a href="CustomsGraphs.html">时间</a>
                                 </li>
                             </ul>
                         </li>
@@ -130,7 +130,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Zoom</h4>
+                <h4 class="modal-title" id="myModalLabel">缩放</h4>
               </div>
               <div class="modal-body">
                 <div class="flot-chart">
@@ -150,31 +150,31 @@
                 <div class="col-lg-12">
                      <div class="panel panel-default" >
                         <div class="panel-heading" style="text-align:center;">
-                           <p class="dashboard-title">Test and Report information</p>
+                           <p class="dashboard-title">测试和报告基本信息</p>
                         </div>
                         <div class="panel-body">
                         <table id="generalInfos" class="table table-bordered table-condensed " >
                             <tr>
-                                <td>File:</td>
+                                <td>样本文件:</td>
                                 <td>${testFile!""}</td>
                             </tr>
                             <tr>
-                                <td>Start Time:</td>
+                                <td>开始时间:</td>
                                 <td>${beginDate!""}</td>
                             </tr>
                             <tr>
-                                <td>End Time:</td>
+                                <td>结束时间:</td>
                                 <td>${endDate!""}</td>
                             </tr>
                             <#if overallFilter?has_content>
                                 <tr>
-                                    <td>Filter for computing:</td>
+                                    <td>统计过滤器:</td>
                                     <td>${overallFilter}</td>
                                 </tr>
                             </#if>
                             <#if seriesFilter?has_content>
                                 <tr>
-                                    <td>Filter for display:</td>
+                                    <td>展示过滤器:</td>
                                     <td>${seriesFilter}</td>
                                 </tr>
                             </#if>
@@ -190,7 +190,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading portlet-header">
                              <i  class="fa fa-bar-chart-o fa-fw" ></i> 
-                            <span type="button" class="span-title dropdown-toggle click-title" data-toggle="collapse" href="#bodyResponseTimeOverTime" aria-expanded="true" aria-controls="bodyResponseTimeOverTime">Response Times Over Time</span>
+                            <span type="button" class="span-title dropdown-toggle click-title" data-toggle="collapse" href="#bodyResponseTimeOverTime" aria-expanded="true" aria-controls="bodyResponseTimeOverTime">响应时长 - 时间</span>
                              <div class="pull-right">
                                 <div class="btn-group">
                                     <a class="btn btn-link btn-xs">
@@ -200,11 +200,11 @@
                                         <i class="fa fa-wrench"></i>
                                     </button>
                                     <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#bodyResponseTimeOverTime" onClick="checkAll('choicesResponseTimesOverTime');">Display all samples</a>
+                                        <li><a href="#bodyResponseTimeOverTime" onClick="checkAll('choicesResponseTimesOverTime');">展示全部样本</a>
                                         </li>
-                                        <li><a href="#bodyResponseTimeOverTime" onClick="uncheckAll('choicesResponseTimesOverTime');">Hide all samples</a>
+                                        <li><a href="#bodyResponseTimeOverTime" onClick="uncheckAll('choicesResponseTimesOverTime');">隐藏全部样本</a>
                                         </li>
-                                        <li><a href="#bodyResponseTimeOverTime" onclick="exportToPNG('flotResponseTimesOverTime', this);">Save as PNG</a></li>
+                                        <li><a href="#bodyResponseTimeOverTime" onclick="exportToPNG('flotResponseTimesOverTime', this);">保存为 PNG</a></li>
                                     </ul>
                                     <button type="button" class="btn btn-link btn-xs dropdown-toggle" data-toggle="collapse" href="#bodyResponseTimeOverTime" aria-expanded="true" aria-controls="bodyResponseTimeOverTime">
                                         <i class="fa fa-chevron-up"></i>
@@ -218,7 +218,7 @@
                                 <div class="flot-chart">
                                     <div class="flot-chart-content" id="flotResponseTimesOverTime" style="float: left; width:80%;"></div>
                                     <div style="float:left;margin-left:5px">
-                                        <p>Zoom :</p>
+                                        <p>缩放 :</p>
                                         <div id="overviewResponseTimesOverTime" style="width:190px;height:100px;"></div>
                                     </div>
                                 </div>
@@ -239,7 +239,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading portlet-header">
                             <i class="fa fa-bar-chart-o fa-fw"></i>
-                            <span type="button" class="dropdown-toggle click-title span-title" data-toggle="collapse" href="#bodyResponseTimePercentilesOverTime" aria-expanded="true" aria-controls="bodyResponseTimePercentilesOverTime">Response Time Percentiles Over Time (successful responses)</span>
+                            <span type="button" class="dropdown-toggle click-title span-title" data-toggle="collapse" href="#bodyResponseTimePercentilesOverTime" aria-expanded="true" aria-controls="bodyResponseTimePercentilesOverTime">响应时长百分位数 - 时间 (成功请求)</span>
                             <div class="pull-right">
                                 <div class="btn-group">
                                     <a class="btn btn-link btn-xs">
@@ -249,11 +249,11 @@
                                         <i class="fa fa-wrench"></i>
                                     </button>
                                     <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#responseTimePercentilesOverTime" onClick="checkAll('choicesResponseTimePercentilesOverTime');">Display all samples</a>
+                                        <li><a href="#responseTimePercentilesOverTime" onClick="checkAll('choicesResponseTimePercentilesOverTime');">展示所有样本</a>
                                         </li>
-                                        <li><a href="#responseTimePercentilesOverTime" onClick="uncheckAll('choicesResponseTimePercentilesOverTime');">Hide all samples</a>
+                                        <li><a href="#responseTimePercentilesOverTime" onClick="uncheckAll('choicesResponseTimePercentilesOverTime');">隐藏所有</a>
                                         </li>
-                                        <li><a href="#responseTimePercentilesOverTime" onclick="exportToPNG('flotResponseTimePercentilesOverTime', this);">Save as PNG</a></li>
+                                        <li><a href="#responseTimePercentilesOverTime" onclick="exportToPNG('flotResponseTimePercentilesOverTime', this);">保存为 PNG</a></li>
                                     </ul>
                                     <button type="button" class="btn btn-link btn-xs dropdown-toggle" data-toggle="collapse" href="#bodyResponseTimePercentilesOverTime" aria-expanded="true" aria-controls="bodyResponseTimePercentilesOverTime">
                                         <i class="fa fa-chevron-down"></i>
@@ -267,7 +267,7 @@
                                 <div class="flot-chart">
                                     <div class="flot-chart-content" id="flotResponseTimePercentilesOverTime" style="float: left; width:80%;"></div>
                                     <div style="float:left;margin-left:5px">
-                                        <p>Zoom :</p>
+                                        <p>缩放 :</p>
                                         <div id="overviewResponseTimePercentilesOverTime" style="width:190px;height:100px;"></div>
                                     </div>
                                 </div>
@@ -287,7 +287,7 @@
                 <div class="col-lg-12 portlet" id="activeThreadsOverTime">
                     <div class="panel panel-default" >
                         <div class="panel-heading portlet-header">
-                           <i class="fa fa-bar-chart-o fa-fw"> </i>  <span type="button" class="span-title dropdown-toggle click-title" data-toggle="collapse" href="#bodyActiveThreadsOverTime" aria-expanded="true" aria-controls="bodyActiveThreadsOverTime">Active Threads Over Time</span>
+                           <i class="fa fa-bar-chart-o fa-fw"> </i>  <span type="button" class="span-title dropdown-toggle click-title" data-toggle="collapse" href="#bodyActiveThreadsOverTime" aria-expanded="true" aria-controls="bodyActiveThreadsOverTime">活跃线程 - 时间</span>
                            <div class="pull-right">
                                 <div class="btn-group">
                                     <a class="drag btn btn-link btn-xs">
@@ -297,11 +297,11 @@
                                         <i class="fa fa-wrench"></i>
                                     </button>
                                     <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#activeThreadsOverTime" onClick="checkAll('choicesActiveThreadsOverTime');">Display all samples</a>
+                                        <li><a href="#activeThreadsOverTime" onClick="checkAll('choicesActiveThreadsOverTime');">展示全部样本</a>
                                         </li>
-                                        <li><a href="#activeThreadsOverTime" onClick="uncheckAll('choicesActiveThreadsOverTime');">Hide all samples</a>
+                                        <li><a href="#activeThreadsOverTime" onClick="uncheckAll('choicesActiveThreadsOverTime');">隐藏全部样本</a>
                                         </li>
-                                        <li><a href="#activeThreadsOverTime" onclick="exportToPNG('flotActiveThreadsOverTime', this);">Save as PNG</a></li>
+                                        <li><a href="#activeThreadsOverTime" onclick="exportToPNG('flotActiveThreadsOverTime', this);">保存为 PNG</a></li>
                                     </ul>
                                     <button type="button" class="btn btn-link btn-xs dropdown-toggle" data-toggle="collapse" href="#bodyActiveThreadsOverTime" aria-expanded="true" aria-controls="bodyActiveThreadsOverTime">
                                         <i class="fa fa-chevron-down"></i>
@@ -315,7 +315,7 @@
                                 <div class="flot-chart">
                                     <div class="flot-chart-content" id="flotActiveThreadsOverTime" style="float: left; width:80%;"></div>
                                     <div style="float:left;margin-left:5px">
-                                        <p>Zoom :</p>
+                                        <p>缩放 :</p>
                                         <div id="overviewActiveThreadsOverTime" style="width:190px;height:100px;"></div>
                                     </div>
                                 </div>
@@ -336,7 +336,7 @@
                 <div class="col-lg-12 portlet" id="bytesThroughputOverTime">
                     <div class="panel panel-default">
                         <div class="panel-heading portlet-header">
-                             <i class="fa fa-bar-chart-o fa-fw" ></i> <span type="button" class="dropdown-toggle click-title span-title" data-toggle="collapse" href="#bodyBytesThroughputOverTime" aria-expanded="true" aria-controls="bodyBytesThroughputOverTime">Bytes Throughput Over Time</span>
+                             <i class="fa fa-bar-chart-o fa-fw" ></i> <span type="button" class="dropdown-toggle click-title span-title" data-toggle="collapse" href="#bodyBytesThroughputOverTime" aria-expanded="true" aria-controls="bodyBytesThroughputOverTime">字节吞吐量 - 时间</span>
                            <div class="pull-right">
                                 <div class="btn-group">
                                     <a class="btn btn-link btn-xs">
@@ -346,11 +346,11 @@
                                         <i class="fa fa-wrench"></i>
                                     </button>
                                     <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#bytesThroughputOverTime" onClick="checkAll('choicesBytesThroughputOverTime');">Display all samples</a>
+                                        <li><a href="#bytesThroughputOverTime" onClick="checkAll('choicesBytesThroughputOverTime');">展示全部样本</a>
                                         </li>
-                                        <li><a href="#bytesThroughputOverTime" onClick="uncheckAll('choicesBytesThroughputOverTime');">Hide all samples</a>
+                                        <li><a href="#bytesThroughputOverTime" onClick="uncheckAll('choicesBytesThroughputOverTime');">隐藏全部样本</a>
                                         </li>
-                                        <li><a href="#bytesThroughputOverTime" onclick="exportToPNG('flotBytesThroughputOverTime', this);">Save as PNG</a></li>
+                                        <li><a href="#bytesThroughputOverTime" onclick="exportToPNG('flotBytesThroughputOverTime', this);">保存为 PNG</a></li>
                                     </ul>
                                     <button type="button" class="btn btn-link btn-xs dropdown-toggle" data-toggle="collapse" href="#bodyBytesThroughputOverTime" aria-expanded="true" aria-controls="bodyBytesThroughputOverTime">
                                         <i class="fa fa-chevron-down"></i>
@@ -364,7 +364,7 @@
                                 <div class="flot-chart">
                                     <div class="flot-chart-content" id="flotBytesThroughputOverTime" style="float: left; width:80%;"></div>
                                     <div style="float:left;margin-left:5px">
-                                        <p>Zoom :</p>
+                                        <p>缩放 :</p>
                                         <div id="overviewBytesThroughputOverTime" style="width:190px;height:100px;"></div>
                                     </div>
                                 </div>
@@ -384,7 +384,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading portlet-header">
                             <i class="fa fa-bar-chart-o fa-fw"></i>
-                            <span type="button" class="dropdown-toggle click-title span-title" data-toggle="collapse" href="#bodyLatenciesOverTime" aria-expanded="true" aria-controls="bodyLatenciesOverTime">Latencies Over Time</span>
+                            <span type="button" class="dropdown-toggle click-title span-title" data-toggle="collapse" href="#bodyLatenciesOverTime" aria-expanded="true" aria-controls="bodyLatenciesOverTime">延迟 - 时间</span>
                             <div class="pull-right">
                                 <div class="btn-group">
                                     <a class="btn btn-link btn-xs">
@@ -394,11 +394,11 @@
                                         <i class="fa fa-wrench"></i>
                                     </button>
                                     <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#latenciesOverTime" onClick="checkAll('choicesLatenciesOverTime');">Display all samples</a>
+                                        <li><a href="#latenciesOverTime" onClick="checkAll('choicesLatenciesOverTime');">展示全部样本</a>
                                         </li>
-                                        <li><a href="#latenciesOverTime" onClick="uncheckAll('choicesLatenciesOverTime');">Hide all samples</a>
+                                        <li><a href="#latenciesOverTime" onClick="uncheckAll('choicesLatenciesOverTime');">隐藏全部样本</a>
                                         </li>
-                                        <li><a href="#latenciesOverTime" onclick="exportToPNG('flotLatenciesOverTime', this);">Save as PNG</a></li>
+                                        <li><a href="#latenciesOverTime" onclick="exportToPNG('flotLatenciesOverTime', this);">保存为 PNG</a></li>
                                     </ul>
                                     <button type="button" class="btn btn-link btn-xs dropdown-toggle" data-toggle="collapse" href="#bodyLatenciesOverTime" aria-expanded="true" aria-controls="bodyLatenciesOverTime">
                                         <i class="fa fa-chevron-down"></i>
@@ -412,7 +412,7 @@
                                 <div class="flot-chart">
                                     <div class="flot-chart-content" id="flotLatenciesOverTime" style="float: left; width:80%;"></div>
                                     <div style="float:left;margin-left:5px">
-                                        <p>Zoom :</p>
+                                        <p>缩放 :</p>
                                         <div id="overviewLatenciesOverTime" style="width:190px;height:100px;"></div>
                                     </div>
                                 </div>
@@ -433,7 +433,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading portlet-header">
                             <i class="fa fa-bar-chart-o fa-fw"></i>
-                            <span type="button" class="dropdown-toggle click-title span-title" data-toggle="collapse" href="#bodyConnectTimeOverTime" aria-expanded="true" aria-controls="bodyConnectTimeOverTime">Connect Time Over Time</span>
+                            <span type="button" class="dropdown-toggle click-title span-title" data-toggle="collapse" href="#bodyConnectTimeOverTime" aria-expanded="true" aria-controls="bodyConnectTimeOverTime">连接时长 - 时间</span>
                             <div class="pull-right">
                                 <div class="btn-group">
                                     <a class="btn btn-link btn-xs">
@@ -443,11 +443,11 @@
                                         <i class="fa fa-wrench"></i>
                                     </button>
                                     <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#connectTimeOverTime" onClick="checkAll('choicesConnectTimeOverTime');">Display all samples</a>
+                                        <li><a href="#connectTimeOverTime" onClick="checkAll('choicesConnectTimeOverTime');">展示全部样本</a>
                                         </li>
-                                        <li><a href="#connectTimeOverTime" onClick="uncheckAll('choicesConnectTimeOverTime');">Hide all samples</a>
+                                        <li><a href="#connectTimeOverTime" onClick="uncheckAll('choicesConnectTimeOverTime');">隐藏全部样本</a>
                                         </li>
-                                        <li><a href="#connectTimeOverTime" onclick="exportToPNG('flotConnectTimeOverTime', this);">Save as PNG</a></li>
+                                        <li><a href="#connectTimeOverTime" onclick="exportToPNG('flotConnectTimeOverTime', this);">保存为 PNG</a></li>
                                     </ul>
                                     <button type="button" class="btn btn-link btn-xs dropdown-toggle" data-toggle="collapse" href="#bodyConnectTimeOverTime" aria-expanded="true" aria-controls="bodyConnectTimeOverTime">
                                         <i class="fa fa-chevron-down"></i>
@@ -461,7 +461,7 @@
                                 <div class="flot-chart">
                                     <div class="flot-chart-content" id="flotConnectTimeOverTime" style="float: left; width:80%;"></div>
                                     <div style="float:left;margin-left:5px">
-                                        <p>Zoom :</p>
+                                        <p>缩放 :</p>
                                         <div id="overviewConnectTimeOverTime" style="width:190px;height:100px;"></div>
                                     </div>
                                 </div>

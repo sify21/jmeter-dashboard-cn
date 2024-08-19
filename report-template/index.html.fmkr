@@ -102,13 +102,13 @@
                             </tr>
                             <#if overallFilter?has_content>
                                 <tr>
-                                    <td>计算过滤器</td>
+                                    <td>统计过滤器</td>
                                     <td>${overallFilter}</td>
                                 </tr>
                             </#if>
                             <#if seriesFilter?has_content>
                                 <tr>
-                                    <td>显示过滤器</td>
+                                    <td>展示过滤器</td>
                                     <td>${seriesFilter}</td>
                                 </tr>
                             </#if>
